@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BERKAY KURT — WOLF</title>
+  <meta name="description" content="Berkay Kurt için <3" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="theme-dark">
+  <!-- Intro Overlay -->
+  <div id="intro" class="intro">
+    <div class="intro-bg"></div>
+    <div class="intro-center">
+      <div class="scanline"></div>
+      <div class="howl-ring"></div>
+
+      <div class="glitch" data-text="WOLF">WOLF</div>
+      <div class="intro-sub">
+        Berkay Kurt • 01.07.2000
+      </div>
+
+      <button id="enterBtn" class="enter-btn">
+        ENTER THE DEN
+      </button>
+    </div>
+  </div>
+
+  <!-- Ambient canvas (stars/particles) -->
+  <canvas id="fx"></canvas>
+
+  <!-- Header -->
+  <header class="topbar">
+    <div class="brand">
+      <span class="dot"></span>
+      <span>BERKAY KURT</span>
+      <span class="sep">/</span>
+      <span class="wolf">WOLF</span>
+    </div>
+
+    <button id="modeBtn" class="mode-btn" aria-label="Tema değiştir">
+      WOLF MODE
+    </button>
+  </header>
+
+  <!-- Main -->
+  <main class="wrap">
+    <section class="hero">
+      <div class="hero-left">
+        <h1 class="title">
+          <span class="tag">WOLF</span>
+          <span class="name">Berkay Kurt</span>
+        </h1>
+        <p class="subtitle">
+          01.07.2000 • Karabük • Ovacık 
+        </p>
+
+        <div class="chips">
+          <span class="chip">⚡ Focus</span>
+          <span class="chip">🖤 Dark Aesthetic</span>
+          <span class="chip">🐺 Wolf Energy</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="portrait">
+          <img src="assets/berkay.jpg" alt="Berkay Kurt" />
+          <div class="portrait-glow"></div>
+          <div class="portrait-frame"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards">
+      <h2 class="section-title">Hakkında</h2>
+
+      <!-- ORİJİNAL GRID TASARIMI KALDI, sadece içerik tek karta düştü -->
+      <div class="grid one">
+        <button class="card" data-love="all">
+          <div class="card-top">
+            <span class="card-icon">🧊</span>
+            <span class="card-title">Hakkında</span>
+          </div>
+
+          <p class="card-text">Wolf Modu</p>
+
+          <!-- Geçmiş/Şimdi/Gelecek: Ayrı kart değil, Hakkında'nın içinde -->
+          <div class="about-lines">
+            <div class="line">
+              <span class="k">Geçmişi</span>
+              <span class="v">Sevgilisi</span>
+            </div>
+            <div class="line">
+              <span class="k">Şimdisi</span>
+              <span class="v">Sevgilisi</span>
+            </div>
+            <div class="line">
+              <span class="k">Geleceği</span>
+              <span class="v">Sevgilisi</span>
+            </div>
+          </div>
+
+          
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- LOVE MODE Overlay -->
+  <div id="loveOverlay" class="love-overlay" aria-hidden="true">
+    <div class="love-bg">
+      <div class="love-waves"></div>
+      <div class="love-waves w2"></div>
+      <div class="love-waves w3"></div>
+    </div>
+
+    <div class="love-content">
+      <div class="love-badge">LOVE MODE</div>
+      <h3 id="loveTitle" class="love-title">Sevgilisi</h3>
+
+      <div class="couple">
+        <img src="assets/biz.jpg" alt="Biz" />
+        <div class="couple-shine"></div>
+      </div>
+
+      <p class="love-text">
+        En sevdiği en sevdiği en sevdiğiiiii💗
+      </p>
+
+      <div class="love-actions">
+        <button id="closeLove" class="ghost-btn">Wolf moda dön</button>
+      </div>
+    </div>
+
+    <div id="hearts" class="hearts"></div>
+    <div id="heartRain" class="heart-rain"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
